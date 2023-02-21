@@ -16,8 +16,7 @@ export default function App() {
   const [allMemes, setAllMemes] = useState([]);
 
   const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
+    const { name, value } = e.target;
     setMeme({ ...meme, [name]: value });
   };
   const imgRef = useRef();
